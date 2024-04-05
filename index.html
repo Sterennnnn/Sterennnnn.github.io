@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="projet.css" rel="stylesheet" >
+  <style>  
+  @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+  </style>
+  <title>Pokémon</title>
+  <link rel="icon" href="images/logo.ico">
+
+</head>
+<body>
+
+  <div id="logo-container">
+    <img src="images/poke-logo.png" class="poke-logo" alt="">
+  </div>
+  
+    <section class="cadre1 fond section1">
+      <h2>Rechercher un Pokémon</h2>
+      <form id="pokemon-search-form">
+        <input class="input" type="text" id="nom_pokemon">
+        <button class="bouton_rechercher" type="button" onclick="recherche_pokemon()">Rechercher</button>
+      </form>
+      <div  class="cadre_rech_pok paragraphe" id="info_pokemon" style="display: none;">
+          <img class="" id="image_pokemon">
+          <h2 class=""><span id="nom_pokemon2"></span></h2>
+          <p class=""><b>Type:</b> <span id="type_pokemon"></span></p>
+          <p class=""><b>Habilité:</b> <span id="habilite_pokemon"></span></p>
+          <p class=""><b>Poids:</b> <span id="poids_pokemon"></span></p>
+          <p class=""><b>Taille:</b> <span id="taille_pokemon"></span></p>
+          <div class="cadre2rech">
+            <h1 class="texte_1"><b>Statistiques:</b></h1>
+            <div id="container">
+              <p class=""><b>HP:</b> <span id="stats0_pokemon"></span></p>
+              <p class=""><b>Attaque: </b><span id="stats1_pokemon"></span></p>
+              <p class=""><b>Défense:</b> <span id="stats2_pokemon"></span></p>
+              <p class=""><b>Attaque spéciale:</b> <span id="stats3_pokemon"></span></p>
+              <p class=""><b>Défense spéciale:</b> <span id="stats4_pokemon"></span></p>
+              <p class=""><b>Vitesse: </b><span id="stats5_pokemon"></span></p>
+            </div>
+          </div>
+      </div>  
+    </section>
+
+      <div id="popup" class="popup">
+          <div class="popup-content popup-details">
+              <span class="close" onclick="fermerPopup()">&times;</span>
+              <img id="popup-image" src="" alt="">
+              <div id="popup-details"></div>
+          </div>
+      </div>
+
+    <section class="cadre2 section2" id="liste_pokemon">
+      <h2 class="texte_2">Liste des Pokémons</h2>
+      <button class="boutonS" id="bouton-retour">Retour</button>
+      <button class="boutonS" id="bouton-suivant">Suivant</button>
+      <div id="cadrePokemon"></div>
+      <img class="" id="image_pokemon">
+    </section>
+
+    <script src="projet.js"></script>
+
+</body>
+</html> 

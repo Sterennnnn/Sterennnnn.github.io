@@ -148,6 +148,6 @@ Le .then() sera effectuer lors de la résolution de la prommesse; donc si la req
 
 
 8- Comment travailler avec le format JSON pour extraire les données retournées par l'API ?
-    voir question 2 pour .json()
-    voir question 6 pour les objets
+    Pour travailler avec le format JSON et extraire les données retournées par l'API, nous devons effectuer une requête HTTP vers l'API grace à fetch. Ensuite nous convertissons la réponse de l'API en format JSON avec json().
+Une fois que nous avons un objet JSON, nous pouvons accéder aux différentes données en utilisant objetJSON.nomDeLaDonnée ou avec la notation d'index (objetJSON['nomDeLaPropriete']) pour accéder aux valeurs des différentes propriétés de l'objet JSON.
 
